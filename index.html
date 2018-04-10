@@ -41,13 +41,13 @@
     function initMap() {
       var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 17,
-        center: { lat: 44.8060000, lng: -93.1520000 },//44.8042326,-93.1548025
+        center: { lat: 44.8060500, lng: -93.151750 },//44.8042326,-93.1548025
         mapTypeId: 'satellite'
       });
 
       var bounds = new google.maps.LatLngBounds(
-        new google.maps.LatLng(44.8046000, -93.1569000),
-        new google.maps.LatLng(44.8085000, -93.1462500));
+        new google.maps.LatLng(44.8046000, -93.1577700),
+        new google.maps.LatLng(44.8085000, -93.1457000));
 
       var srcImage = './IMG/PDF_ParkMap2017InsideArtFile.png'
 
@@ -94,7 +94,7 @@
       img.style.width = '100%';
       img.style.height = '100%';
       img.style.position = 'absolute';
-      img.style.opacity = '.6';
+      img.style.opacity = '.8';
       div.appendChild(img);
 
       this.div_ = div;
