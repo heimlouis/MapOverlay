@@ -40,16 +40,16 @@
 
     function initMap() {
       var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 17,
-        center: { lat: 44.8060500, lng: -93.151750 },//44.8042326,-93.1548025
+        zoom: 20,
+        center: { lat: 44.80526000, lng: -93.15375000 },//44.8042326,-93.1548025
         mapTypeId: 'satellite'
       });
 
       var bounds = new google.maps.LatLngBounds(
-        new google.maps.LatLng(44.8046000, -93.1577700),
-        new google.maps.LatLng(44.8085000, -93.1457000));
+        new google.maps.LatLng(44.8048, -93.1577000),
+        new google.maps.LatLng(44.8085000, -93.1457900));
 
-      var srcImage = './IMG/PDF_ParkMap2017InsideArtFile.png'
+      var srcImage = './IMG/ParkMap2017InsideArtFile.png'
 
       // the bounds of the image, and a reference to the map.
       overlay = new CaponiOverlay(bounds, srcImage, map);
@@ -94,7 +94,7 @@
       img.style.width = '100%';
       img.style.height = '100%';
       img.style.position = 'absolute';
-      img.style.opacity = '.8';
+      img.style.opacity = '.9';
       div.appendChild(img);
 
       this.div_ = div;
